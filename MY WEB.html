@@ -1,0 +1,104 @@
+<html>
+<head>
+		<link type="text/css" rel="stylesheet" href="Style.css">
+		<title> Carters Web Page  </title>
+	
+<script> 
+function banner(){ 
+var text = confirm("Did You Really Want To BING?"); 
+return text; 
+}
+function answer () {
+ var radio = document.getElementsByName("triva");
+ var selection= false;
+ var message= "";
+    for( var i = 0; i < radio.length; i++) { 
+    if(radio[i].value == "10" && radio[i].checked == true) { 
+selection = true; 
+   } //end if statement 
+  } //end for loop
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+}//end function answer
+</script>
+
+
+	<style>
+		p{
+	color: Green;
+	font-size: 18px;
+		}
+	</style>
+</head>
+
+<body id="backround">
+<a href="http://bing.com" onclick="return banner()">
+<header id="header"> <center><h2>
+ Carter </h2> </center> </header>
+</a>
+<center><h1> Yummy Foods </h1></center>
+<center><p> COMING SOON!! </p></center>
+<nav> 
+  <ul id="navmenu">
+   <li class="navitem"> <a href="https://www.google.com/search?q=pictures+of+good+food&rlz=1c1gcea_enus749us749&oq=pictures+of+good+food&aqs=chrome..69i57.4965j0j7&sourceid=chrome&ie=utf-8&safe=active&">Food Pictures </a> </li>
+   <li class="navitem"> <a href="https://www.google.com/search?q=food+tasting+videos&rlz=1c1gcea_enus749us749&oq=food+tasting+videos&aqs=chrome..69i57.8432j0j7&sourceid=chrome&ie=utf-8&safe=active&#">Tasting Food </a> </li>
+   <li class="navitem"> <a href="https://www.google.com/search?q=list+of+good+food+places&rlz=1c1gcea_enus749us749&oq=list+of+good+food+places&aqs=chrome..69i57.6871j0j7&sourceid=chrome&ie=utf-8&safe=active&#">List of Good places to eat </a> </li>
+  </ul> 
+
+</nav>
+<div class="header">
+<center>
+	
+
+		<p class="paragraph"> Dosn't everbody love food? I sure<i>do!!</i>Being me im always <strong>hungry,</strong> So <span class="wrap-text"> I made this page 
+		</span>to make you even <u> more </u> hungry! </p>
+		<div class="wrap-list">
+	<ol>
+		<li id= "listitem"> Think about the last yummy food you ate! </li>
+		<li id= "listitem"> Think about it hard... </li>
+		<li id= "listitem"> Now I hope your Hungry! </li>
+	</ol>
+	</div>
+	<div class="wrap-trivia">
+	<h2> Food Pop Quizz: <h2>
+<p> When Was Pizza Made </p>
+	<form>
+	   <div id="response"></div>
+		<input type="radio" name="triva" value="4"> Nobody knows <br>
+		<input type="radio" name="triva" value="10"> 1889 <br>
+		<input type="radio" name="triva" value="2"> 1901 <br>
+		<input type="radio" name="triva" value="3"> 1675 <br>
+		<input type="button" value="Click Here" onclick="answer()">
+		</div>
+	</form>
+
+<div id="leftside">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRCjJJK2hSR6r2JyZVlGQQDpn-zLDK-tPQMGDPpmxViECnENM9:https://get.pxhere.com/photo/dish-meal-food-produce-drink-cuisine-pizza-pepperoni-italian-food-european-food-954587.jpg"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk2jYngUwwq78pskxBJIfBEelSLm_8o4PxQaFHhB5Nzs1OwPYe:https://farm7.static.flickr.com/6041/6218813821_214f130fba.jpg"/>w
+</div>
+</br>
+<div id="rightside">
+
+<video width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/HTML/mov_bbb.mp4" type="video/mp4">
+<source src="http://www.w3schools.com/HTML/mov_bbb.ogg" type="video/ogg">
+</video>
+
+<audio width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+</audio> 
+</div> 
+<hr>
+	<center> Carters <a href="http://hoodamath.com/games/"> Favorite food website </a> </center>
+	</center>
+	<footer>Carter Davis  created this web </footer>
+</body>
+
+
+
+</html>
